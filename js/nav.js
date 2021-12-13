@@ -22,7 +22,7 @@ const createNav = () => {
               <button class="btn" id="user-btn">Log out</button>
             </div>
           </a>
-          <a href="#">
+          <a href="/cart.html">
             <img src="img/cart.png" alt="" />
           </a>
         </div>
