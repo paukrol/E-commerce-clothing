@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+    <link rel="stylesheet" href="css/seller.css" />
+    <title>Seller Dashboard</title>
+  </head>
+  <body>
+    <img src="img/loader.gif" alt="" class="loader" />
+
+    <div class="alert-box">
+      <img src="img/error.png" alt="" class="alert-img" />
+      <p class="alert-msg">Error message</p>
+    </div>
+
+    <img src="img/dark-logo.png" alt="" class="logo" />
+
+    <!-- become seller element -->
+    <div class="become-seller hide">
+      <p class="heading">Become a seller</p>
+      <p class="des">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cumque
+        totam, recusandae sunt reiciendis quaerat, eum repudiandae ipsa,
+        repellat saepe eius vel enim quibusdam rem ullam dolor quia?
+        Dignissimos, eaque quo! Mollitia, beatae cupiditate recusandae modi,
+        rerum consectetur sit reprehenderit quod, nihil unde excepturi labore
+        minus dolorem? Voluptate, id nesciunt! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Porro, unde nulla eveniet animi id labore
+        natus deleniti vel culpa. Quasi?
+      </p>
+      <button class="btn" id="apply-btn">Apply for seller account</button>
+    </div>
+
+    <!-- apply form -->
+    <form action="" class="apply-form hide">
+      <input
+        type="text"
+        placeholder="Business Name / Company Name / Shop Name"
+        id="business-name"
+      />
+      <textarea id="business-add" placeholder="Address"></textarea>
+      <textarea id="about" placeholder="About"></textarea>
+
+      <input type="text" placeholder="Number" id="number" />
+
+      <input
+        type="checkbox"
+        id="terms-and-cond"
+        class="checkbox"
+        hidden
+        checked
+      />
+      <label for="terms-and-cond" class="toggle">
+        <div class="marker-box"></div>
+        <p>Agree to our <a href="#">Terms and Services</a></p>
+      </label>
+
+      <!-- <br /> -->
+      <input type="checkbox" id="legitInfo" class="checkbox" checked hidden />
+      <label for="legitInfo" class="toggle">
+        <div class="marker-box"></div>
+        <p>An Information provided is legit</p>
+      </label>
+
+      <button class="submit-btn" id="apply-form-btn">apply</button>
+    </form>
+
+    <!-- products list -->
+    <div class="product-listing hide">
+      <div class="add-product">
+        <p class="add-product-title">add product</p>
+        <button class="btn" id="btn-add-product">add product</button>
+      </div>
+      <img src="img/no-products.png" class="no-product-image hide" alt="" />
+
+      <!-- delete alert -->
+      <div class="delete-alert">
+        <div class="alert">
+          <button class="close-btn">
+            <img src="img/close.png" alt="" />
+          </button>
+          <img src="img/delete-warning.png" alt="" class="delete-svg" />
+          <p class="text">Are you sure? You want to delete this product</p>
+          <button class="delete-btn">Delete</button>
+        </div>
+      </div>
+
+      <!-- card -->
+      <div class="product-container">
+        <!-- <div class="product-card">
+          <div class="product-image">
+            <span class="tag">Draft</span>
+            <img src="img/card2.png" alt="" class="product-thumb" />
+            <button class="card-action-btn edit-btn">
+              <img src="img/edit.png" alt="" />
+            </button>
+            <button class="card-action-btn open-btn">
+              <img src="img/open.png" alt="" />
+            </button>
+            <button class="card-action-btn delete-popup-btn">
+              <img src="img/delete.png" alt="" />
+            </button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth...</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="js/renderProduct.js"></script>
+    <script src="js/seller.js"></script>
+  </body>
+</html>
